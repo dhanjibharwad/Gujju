@@ -6,6 +6,7 @@ import BannerSection from "@/components/home/BannerSection";
 import DealsSection from "@/components/home/DealsSection";
 import JewelryCollections from "@/components/home/TrendingCollection";
 import BusinessConsultationSection from "@/components/home/Bsol";
+import EcommerceCards from "@/components/home/Bigcard";
 
 
 
@@ -24,6 +25,8 @@ export default function HomePage() {
       <JewelryCollections/>
 
       <BusinessConsultationSection/>
+
+      <EcommerceCards/>
 
       {/* Featured Products */}
       {/* <FeaturedProducts /> */}

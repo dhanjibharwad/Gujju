@@ -19,15 +19,15 @@ const BusinessConsultationSection: React.FC = () => {
   return (
     // <section className="bg-gradient-to-br from-[#0a1628] via-[#0f2744] to-[#1a3a5c] py-16 px-4 md:px-8 lg:px-16">
     <section
-  className="relative py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden"
+  className="relative py-10 px-4 md:px-8 lg:px-16 bg-white overflow-hidden"
 >
   <div
     className="absolute inset-0 opacity-35"
-    style={{
-      backgroundImage:
-        "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 512 512'%3E%3Cpath fill='%23e4c6b0' d='M256 32c-22 42-58 63-103 63-5 0-10 0-15-1 1 63 44 116 118 128-78 14-118 68-118 128 5-1 10-1 15-1 45 0 81 21 103 63 22-42 58-63 103-63 5 0 10 0 15 1-1-60-40-114-118-128 74-12 117-65 118-128-5 1-10 1-15 1-45 0-81-21-103-63z'/%3E%3C/svg%3E\")",
-      backgroundSize: "80px 120px",
-    }}
+    // style={{
+    //   backgroundImage:
+    //     "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 512 512'%3E%3Cpath fill='%23e4c6b0' d='M256 32c-22 42-58 63-103 63-5 0-10 0-15-1 1 63 44 116 118 128-78 14-118 68-118 128 5-1 10-1 15-1 45 0 81 21 103 63 22-42 58-63 103-63 5 0 10 0 15 1-1-60-40-114-118-128 74-12 117-65 118-128-5 1-10 1-15 1-45 0-81-21-103-63z'/%3E%3C/svg%3E\")",
+    //   backgroundSize: "80px 120px",
+    // }}
   />
 
       <div className="max-w-7xl mx-auto">

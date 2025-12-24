@@ -1,17 +1,15 @@
 export default function Page() {
   const categories = [
-    { name: "Today's Deal", badge: "NEW", image: "/images/gift.png" },
-    { name: "Mobiles & Tablets", badge: null, image: "/images/phone.png" },
-    { name: "Men", badge: null, image: "/images/men.png" },
-    { name: "Women", badge: null, image: "/images/women.png" },
-    { name: "Kids", badge: null, image: "/images/kid.png" },
-    { name: "Electronics", badge: null, image: "/images/electronic.png" },
-    { name: "Home & Furniture", badge: null, image: "/images/home-furniture.png" },
-    { name: "TVs & Appliances", badge: null, image: "/images/tv.png" },
-    { name: "Gifts & Toys", badge: null, image: "/images/teddy.png" },
-    { name: "Laptops", badge: null, image: "/images/laptop.png" },
-    { name: "Laptops", badge: null, image: "/images/laptop.png" },
-    { name: "Laptops", badge: null, image: "/images/laptop.png" },
+    { name: "Today's Deal", badge: "NEW", image: "/images/gift.png", link: "/product" },
+    { name: "Mobiles & Tablets", badge: null, image: "/images/phone.png", link: "/category/mobiles-tablets" },
+    { name: "Men", badge: null, image: "/images/men.png", link: "/category/men" },
+    { name: "Women", badge: null, image: "/images/women.png", link: "/category/women" },
+    { name: "Kids", badge: null, image: "/images/kid.png", link: "/category/kids" },
+    { name: "Electronics", badge: null, image: "/images/electronic.png", link: "/category/electronics" },
+    { name: "Home & Furniture", badge: null, image: "/images/home-furniture.png", link: "/category/home-furniture" },
+    { name: "TVs & Appliances", badge: null, image: "/images/tv.png", link: "/category/tv-appliances" },
+    { name: "Gifts & Toys", badge: null, image: "/images/teddy.png", link: "/category/gifts-toys" },
+    { name: "Laptops", badge: null, image: "/images/laptop.png", link: "/category/laptops" },
   ];
 
   return (
@@ -19,8 +17,9 @@ export default function Page() {
       <div className="mx-auto">
         <div className="flex items-center justify-between gap-4 pb-2">
           {categories.map((category, index) => (
-            <div
+            <a
               key={index}
+              href={category.link}
               className="flex flex-col items-center cursor-pointer group relative"
             >
               <div className="w-32 h-32 bg-gray-100 rounded-full flex flex-col items-center justify-center p-4">
@@ -45,7 +44,7 @@ export default function Page() {
                   {category.name}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
